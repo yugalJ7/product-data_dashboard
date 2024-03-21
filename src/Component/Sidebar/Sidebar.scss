@@ -1,0 +1,163 @@
+@import "../../variable.scss";
+
+.ds-flex {
+  display: flex;
+}
+.sidebar-content {
+  .content-header_company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px;
+
+    .header-company_name {
+      gap: 7px;
+      margin-top: 5px;
+      div {
+        p:nth-child(1) {
+          margin-top: 2px;
+          font-size: 10px;
+          color: $medium-grey-color;
+        }
+        p:nth-child(2) {
+          font-weight: bold;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .header-about_team {
+    border: 1px solid $main-color;
+    margin-top: 0.8rem;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    .about-team_single {
+      justify-content: space-between;
+      padding: 5px;
+      align-items: center;
+      border-radius: 8px;
+      margin-bottom: 2px;
+      div {
+        align-items: center;
+        gap: 5px;
+        p {
+          letter-spacing: 0.3px;
+          font-weight: bold;
+          font-size: 13px;
+        }
+      }
+
+      button {
+        font-family: myFirstFont;
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+        width: 2.2rem;
+        margin-right: 3px;
+        border: 1px solid $btn-border-color;
+        background-color: $highlight-grey-color;
+        border-radius: 5px;
+        padding: 2px;
+        color: $medium-grey-color;
+        font-weight: bold;
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+    .about-team_single:hover {
+      background-color: $highlight-grey-color;
+      button {
+        background-color: white;
+      }
+    }
+  }
+  .header-create_team {
+    align-items: center;
+    border: 1px solid $main-color;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 10px 15px 11px;
+    gap: 7px;
+    p {
+      letter-spacing: 0.3px;
+      font-weight: bold;
+      font-size: 13px;
+      color: $medium-grey-color;
+    }
+    button {
+      border: 1px solid $medium-grey-color;
+      background-color: $main-color;
+      border-radius: 3px;
+      font-size: 10px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.sidebar-footer {
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 5px 10px;
+
+  p {
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .footer-invite {
+    align-items: center;
+    gap: 4.2px;
+  }
+  .footer-help {
+    justify-content: space-between;
+    align-items: center;
+    div {
+      p {
+        margin-left: 5px;
+      }
+    }
+    button {
+      font-family: myFirstFont;
+      width: 2rem;
+      margin-right: 3px;
+      border: 1px solid $btn-border-color;
+      background-color: $highlight-grey-color;
+      border-radius: 6px;
+      padding: 2px;
+      color: $medium-grey-color;
+      font-weight: bold;
+      font-size: 10px;
+    }
+  }
+  .footer-trail {
+    align-items: center;
+    gap: 5px;
+    background-color: $highlight-grey-color;
+    padding: 8px 8px;
+    border-radius: 8px;
+    .bt-One {
+      text-align: center;
+      border: 1px solid $btn-border-color;
+      background-color: white;
+      border-radius: 5px;
+      font-size: 10px;
+      width: 14px;
+      height: 15px;
+      padding-top: 1px;
+    }
+    .bt-Two {
+      border: none;
+      background: #2a2630;
+      border-radius: 7px;
+      color: white;
+      padding: 4px 6px;
+      height: 1.7rem;
+      margin-left: 13px;
+    }
+  }
+}
