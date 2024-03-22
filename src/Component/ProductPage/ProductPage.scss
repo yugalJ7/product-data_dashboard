@@ -1,5 +1,9 @@
 @import "../../variable.scss";
 
+.dataGrid-Container_header::-webkit-scrollbar {
+  display: none;
+}
+
 .wt-btn {
   font-family: myFirstFont;
   padding: 8px 4px;
@@ -132,5 +136,17 @@
       background-color: white;
       color: $medium-grey-color;
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dataGrid-Container_header {
+    overflow-x: scroll;
+  }
+  .dataGrid-Container_footer {
+    overflow-x: scroll;
+  }
+  .product-container__tools {
+    overflow-x: scroll;
   }
 }

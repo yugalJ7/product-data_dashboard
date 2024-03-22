@@ -3,6 +3,9 @@
 .tag-section::-webkit-scrollbar {
   display: none;
 }
+.product-DataGrid_Container::-webkit-scrollbar {
+  display: none;
+}
 
 .dv-brd {
   padding: 4px 10px;
@@ -61,5 +64,11 @@ input {
     padding: 3px;
     font-weight: bolder;
     letter-spacing: 0.3px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-DataGrid_Container {
+    overflow-x: scroll;
   }
 }

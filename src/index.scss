@@ -20,7 +20,7 @@
     border-radius: 10px;
   }
   .sidebar-container {
-    width: 16rem;
+    min-width: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,5 +36,13 @@
     width: 80vw;
     height: 97vh;
     // height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    .productPage-container {
+      width: 80vw;
+    }
   }
 }
