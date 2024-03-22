@@ -102,7 +102,7 @@ const Sidebar = () => {
           </button>
         </div>
         {folderItemData.map((item) => {
-          return <Folder item={item} />;
+          return <Folder item={item} key={item.id} />;
         })}
       </div>
 

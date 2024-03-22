@@ -13,7 +13,6 @@
 
 .container {
   display: flex;
-  height: 100vh;
   gap: 10px;
   padding: 13px;
   font-family: myFirstFont;
@@ -27,9 +26,15 @@
     justify-content: space-between;
     border: 2px solid $main-color;
     padding: 5px;
+    height: auto;
   }
   .productPage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid $main-color;
     width: 80vw;
+    height: 97vh;
+    // height: auto;
   }
 }

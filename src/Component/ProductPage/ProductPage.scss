@@ -1,1 +1,136 @@
 @import "../../variable.scss";
+
+.wt-btn {
+  font-family: myFirstFont;
+  padding: 8px 4px;
+  height: 1.6rem;
+  gap: 3px;
+  display: flex;
+  align-items: center;
+  border: 1px solid $highlight-grey-color;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: rgba($medium-grey-color, 0.1) 0px 1px 2px;
+  font-size: 12px;
+}
+
+.gridTbl {
+  display: grid;
+  grid-template-columns: 15rem 11.5rem 10rem 10rem 9rem 10rem 5.1rem;
+}
+
+.product-container {
+  .product__Navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $highlight-grey-color;
+    padding: 0.7rem 1rem;
+
+    p {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 5px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      input {
+        border-radius: 7px;
+        border: 1px solid $highlight-grey-color;
+        box-shadow: rgba($medium-grey-color, 0.1) 0px 1px 2px;
+        height: 1.6rem;
+        width: 11rem;
+        position: relative;
+        padding-left: 1.3rem;
+      }
+      input::placeholder {
+        position: absolute;
+        top: 7px;
+        left: 1.3rem;
+        font-size: 11px;
+      }
+
+      button {
+        padding-top: 4px;
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 1px solid $highlight-grey-color;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: rgba($medium-grey-color, 0.1) 0px 1px 2px;
+      }
+    }
+  }
+  .product-container__tools {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $highlight-grey-color;
+    border-bottom: 1px solid $highlight-grey-color;
+    padding: 0.5rem;
+
+    div {
+      display: flex;
+      gap: 8px;
+
+      span {
+        border: 1px solid $medium-grey-color;
+        background-color: $main-color;
+        border-radius: 3px;
+        font-size: 10px;
+        width: 9px;
+        height: 8px;
+        // padding-bottom: 4px;
+      }
+      .bot-btn {
+        font-family: myFirstFont;
+        padding: 4px 4px;
+        height: 1.6rem;
+        gap: 3px;
+        display: flex;
+        align-items: center;
+        border: 1px dotted $btn-border-color;
+        background-color: #f9f9fa;
+        border-radius: 8px;
+        font-size: 11px;
+        color: $medium-grey-color;
+      }
+    }
+  }
+}
+
+.product-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+  .product-footer_container {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid $highlight-grey-color;
+    border-radius: 10px;
+
+    p {
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .blk-btn {
+      border: none;
+      background: #2a2630;
+      border-radius: 4px;
+      color: white;
+      font-size: 10px;
+      height: 0.9rem;
+      padding: 0px 5px;
+    }
+
+    .cross-btn {
+      border: none;
+      background-color: white;
+      color: $medium-grey-color;
+    }
+  }
+}
